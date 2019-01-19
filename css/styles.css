@@ -19,12 +19,32 @@ html, body {
     justify-content: space-between;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.headshot-wrapper{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.headshot {
+    
+    height: auto;
+    width: 100%;
+    border-radius: 30rem;
+    max-width: 200px;
+}
+
 .brand {
     font-size: 1.5em;
 
 }
 
-.brand, .nav-link {
+.brand, .nav-link, a {
     color: #303137;
 }
 
