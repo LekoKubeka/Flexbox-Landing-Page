@@ -8,3 +8,83 @@ html, body {
     color: #303137;
     margin: 0;
 }
+
+.navbar {
+    display: flex;
+    padding: 1em;
+    text-transform: uppercase;
+    max-width: 70rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.brand {
+    font-size: 1.5em;
+
+}
+
+.brand, .nav-link {
+    color: #303137;
+}
+
+.sensei {
+    color: #66B6D3;
+    
+}
+
+
+
+.topnav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.topnav .nav-link{
+    text-decoration: none;
+    padding-left: 1.5em;
+    
+}
+
+.dropdownLink {
+    display: none;
+}
+
+@media (max-width: 768px){ /*responsive dropdown menu query*/
+    ul.topnav li a.nav-link{
+        display: none;
+    }
+    
+    ul.topnav li.dropdownLink {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    
+    
+    ul.topnav.responsive {
+        flex-direction: column;
+        text-align:right;
+    }
+    
+    ul.topnav.responsive li.dropdownLink {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    
+    ul.topnav.responsive li {
+        position: relative;
+        top: 30px;
+        right: 30px;
+    }
+    
+    ul.topnav.responsive li a.nav-link{
+    display: block;
+    line-height: 2;
+}
+    
+}
