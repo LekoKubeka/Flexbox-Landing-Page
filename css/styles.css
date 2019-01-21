@@ -46,7 +46,7 @@ header {
     max-width: 200px;
 }
 
-.services {
+.services, .contact-container {
     background-color: lightgray; 
     padding: 4rem 1rem;
 }
@@ -73,7 +73,7 @@ header {
     justify-content: center;
 }   
 
-.quoteBtn{
+.Btn{
     color: #fff;
     background: #66B6D3;
     font-size: 1.2em;
@@ -167,6 +167,28 @@ header {
 
 .dropdownLink {
     display: none;
+}
+
+form label {
+    font-size: 0.8em;
+}
+
+.form-group {
+    margin-bottom: .75rem;
+}
+
+.form-control{
+    max-width: 80vw;
+    width: 100%;
+    background: white;
+    color: #292b2c;
+    border-radius: 0.125em;
+    border: .0625em solid #ced4da; 
+    padding: .375rem .75rem;
+    font-size: 1rem; /*override 11px with 16px*/
+    line-height: 1.5;
+    background-clip: padding-box;
+    display: block;
 }
 
 @media (max-width: 768px){ /*responsive dropdown menu query*/
