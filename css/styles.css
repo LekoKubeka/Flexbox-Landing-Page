@@ -105,6 +105,36 @@ header {
     width: 11rem;
 }
 
+.section-header{
+    padding: 6rem 4rem;
+}
+
+.portfolio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.portfolio-object {
+    
+    max-width: 15em;
+    margin: 1rem 0;
+}
+
+.portfolio-box{
+    width: 15em;
+    height: 15em;
+    background: #F1F3Fa;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.portfolio-box:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 
 .brand {
     font-size: 1.5em;
@@ -174,4 +204,24 @@ header {
     line-height: 2;
 }
     
+    .media-object {
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    .icon-wrapper-right, .icon-wrapper-left{
+        order: 1;
+    }
+    
+    blurb-wrapper-right, .blurb-wrapper-left{
+        order: 2;
+        padding-top: 2rem;
+    }
+    
+}
+
+@media (max-width: 600px){
+    .portfolio-wrapper{
+        justify-content: center;
+    }
 }
