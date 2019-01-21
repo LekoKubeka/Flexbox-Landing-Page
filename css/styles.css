@@ -9,15 +9,22 @@ html, body {
     margin: 0;
 }
 
-.navbar {
-    display: flex;
-    padding: 1em;
+.navbar, .container {
     text-transform: uppercase;
-    max-width: 70rem;
+    max-width: 69rem;
     width: 100%;
     margin: 0 auto;
-    justify-content: space-between;
 }
+
+.navbar {
+    justify-content: space-between;
+    padding: 1em;
+    display: flex;
+
+
+}
+
+
 
 header {
     display: flex;
@@ -38,6 +45,66 @@ header {
     border-radius: 30rem;
     max-width: 200px;
 }
+
+.services {
+    background-color: lightgray; 
+    padding: 4rem 1rem;
+}
+
+.media-object{
+    display: flex;
+    align-items: center;
+    padding: 4rem 1rem ;
+}
+
+.blurb-header {
+    font-size 24px;
+    margin-top: 0;
+}
+
+.blurb-info{
+    color: #646B90;
+    font-size: 1.1em;
+}
+
+.quote-btn-wrapper{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}   
+
+.quoteBtn{
+    color: #fff;
+    background: #66B6D3;
+    font-size: 1.2em;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 0.2em;
+    box-shadow: 0 0.3125em 1.25em rgba(0,0,0,.32);
+}
+
+.blurb-wrapper-right, .blurb-wrapper-left {
+    flex: 1;
+}
+
+.icon-wrapper-left, .icon-wrapper-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-wrapper-left, .blurb-wrapper-left{
+    order: 1;
+}
+
+.icon-wrapper-right, .blurb-wrapper-right{
+    order: 2;
+}
+
+.icon {
+    width: 11rem;
+}
+
 
 .brand {
     font-size: 1.5em;
